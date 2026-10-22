@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Process Toolkit: try the tools free</title>
+<meta name="description" content="Five offline work tools in single HTML files. Try each one free in your browser.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=IBM+Plex+Mono:wght@500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#172025;--ink:#eef1ef;--muted:#b9c3c1;--card:#1f2a30;--line:#2f3a3e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 "Source Sans 3",system-ui,sans-serif;
+  background-image:radial-gradient(circle,rgba(255,255,255,.07) 1.4px,transparent 1.8px);background-size:32px 32px}
+.stripe{position:fixed;left:0;top:0;bottom:0;width:10px;display:flex;flex-direction:column} .stripe i{flex:1}
+main{max-width:1120px;margin:0 auto;padding:64px max(20px,env(safe-area-inset-right)) 64px max(28px,env(safe-area-inset-left))}
+.eyebrow{font:500 .85rem "IBM Plex Mono",monospace;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+h1{font:800 clamp(2.6rem,7vw,4.6rem)/1 "Archivo",system-ui,sans-serif;letter-spacing:-.02em;margin:14px 0 18px}
+.lede{font-size:1.25rem;color:var(--muted);max-width:44ch;margin:0}
+.points{display:flex;flex-wrap:wrap;gap:8px 28px;margin:22px 0 0;padding:0;list-style:none;color:var(--muted);font-size:.98rem}
+.points li::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;background:#9aaee0;margin-right:10px}
+.bundle{margin:44px 0 28px;display:grid;grid-template-columns:220px 1fr;gap:28px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.bundle img{width:100%;height:auto;border-radius:8px;display:block}
+.bundle h2{font:800 1.8rem/1.15 "Archivo",system-ui,sans-serif;margin:0 0 8px}
+.bundle p{margin:0 0 6px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--a);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.card img{width:100%;height:auto;display:block;aspect-ratio:1}
+.card .body{padding:18px 18px 20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{font:800 1.35rem "Archivo",system-ui,sans-serif;margin:0}
+.card p{margin:0;color:var(--muted);font-size:.98rem;flex:1}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:999px;padding:9px 18px;font-size:.98rem}
+.try{background:var(--ink);color:var(--bg)}
+.buy{border:1px solid #5d6b70;color:var(--ink)}
+.try:hover{background:#fff} .buy:hover{border-color:var(--ink)}
+.btn:focus-visible{outline:2px solid #9aaee0;outline-offset:2px}
+h2.sec{font:800 1.5rem "Archivo",system-ui,sans-serif;margin:48px 0 16px}
+.faq{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px 32px;color:var(--muted)}
+.faq b{color:var(--ink);display:block}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);color:#9aa8ac;font-size:.9rem}
+@media (max-width:640px){.bundle{grid-template-columns:1fr}.bundle img{max-width:260px}}
+</style></head><body>
+<div class="stripe" aria-hidden="true"><i style="background:#7cc296"></i><i style="background:#c39ad0"></i><i style="background:#7fb3cc"></i><i style="background:#9aaee0"></i><i style="background:#e0a548"></i></div>
+<main>
+<div class="eyebrow">Offline tools · One HTML file each</div>
+<h1>Try before you buy</h1>
+<p class="lede">Five small tools for working out and documenting how work gets done. Open any of them below and use it right here in your browser.</p>
+<ul class="points"><li>No account</li><li>No subscription</li><li>The full versions work offline</li></ul>
+
+<section class="bundle" style="border-top:4px solid #9aaee0">
+  <img src="img/bundle.jpg" alt="" width="640" height="640">
+  <div>
+    <h2>The Process Toolkit</h2>
+    <p>All five tools: think it, decide it, map it, assign it, plan it.</p>
+    <p><b style="color:var(--ink)">$79</b> for all five, instead of $125 separately. Team license for one company: $199.</p>
+    <div class="acts"><a class="btn try" href="https://beltashazar.gumroad.com">Get the bundle</a></div>
+  </div>
+</section>
+
+<div class="grid">
+<article class="card" style="--a:#7cc296">
+  <img src="img/mind-maps.jpg" alt="" width="640" height="640" loading="lazy">
+  <div class="body">
+    <h3>Mind Maps</h3>
+    <p>Brainstorm, plan and rearrange ideas. Tab adds a branch, Enter adds the next idea, and the map tidies itself.</p>
+    <div class="acts"><a class="btn try" href="mind-maps.html">Try it free</a><a class="btn buy" href="https://beltashazar.gumroad.com/l/mind-map-creator">Buy, $19</a></div>
+  </div>
+</article>
+<article class="card" style="--a:#c39ad0">
+  <img src="img/decision-matrix.jpg" alt="" width="640" height="640" loading="lazy">
+  <div class="body">
+    <h3>Decision Matrix</h3>
+    <p>Compare options against what matters, with weights, must-haves and a check on how sure the result is.</p>
+    <div class="acts"><a class="btn try" href="decision-matrix.html">Try it free</a><a class="btn buy" href="https://beltashazar.gumroad.com/l/decision-matrix">Buy, $19</a></div>
+  </div>
+</article>
+<article class="card" style="--a:#7fb3cc">
+  <img src="img/workflow-flowcharts.jpg" alt="" width="640" height="640" loading="lazy">
+  <div class="body">
+    <h3>Workflow Flowcharts</h3>
+    <p>Draw real flowcharts with standard shapes, swimlanes and arrows that route themselves.</p>
+    <div class="acts"><a class="btn try" href="workflow-flowcharts.html">Try it free</a><a class="btn buy" href="https://beltashazar.gumroad.com/l/flowchart-creator">Buy, $29</a></div>
+  </div>
+</article>
+<article class="card" style="--a:#9aaee0">
+  <img src="img/raci-chart-maker.jpg" alt="" width="640" height="640" loading="lazy">
+  <div class="body">
+    <h3>RACI Chart Maker</h3>
+    <p>Show who does, owns, advises on and hears about each task, and catch the gaps.</p>
+    <div class="acts"><a class="btn try" href="raci-chart-maker.html">Try it free</a><a class="btn buy" href="https://beltashazar.gumroad.com/l/raci-chart-maker">Buy, $19</a></div>
+  </div>
+</article>
+<article class="card" style="--a:#e0a548">
+  <img src="img/workflow-planner.jpg" alt="" width="640" height="640" loading="lazy">
+  <div class="body">
+    <h3>Workflow Planner</h3>
+    <p>Turn any process into a one-page plan your team will actually read.</p>
+    <div class="acts"><a class="btn try" href="workflow-planner.html">Try it free</a><a class="btn buy" href="https://beltashazar.gumroad.com/l/workflow-planner">Buy, $39</a></div>
+  </div>
+</article>
+</div>
+
+<h2 class="sec">About the trial</h2>
+<div class="faq">
+  <p><b>What can I do in the trial?</b>Everything the tool does: open the examples, make your own, edit, undo and print.</p>
+  <p><b>What's different in the full version?</b>You keep it. It's one file that works offline, saves your work with Download HTML, copies as text and prints without the trial mark.</p>
+  <p><b>Is my work stored anywhere?</b>No. The trial keeps your changes only until you close the tab, and nothing is sent anywhere.</p>
+  <p><b>Personal or team?</b>A personal license is for one person. A team license covers everyone in one company.</p>
+</div>
+<footer>© 2026 · <a style="color:inherit" href="https://beltashazar.gumroad.com">Store</a></footer>
+</main></body></html>
